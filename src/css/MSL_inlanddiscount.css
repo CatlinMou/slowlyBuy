@@ -1,4 +1,4 @@
-.header {
+.title_header {
   background-color: #ff841d;
   height: 50px;
   padding: 10px;
@@ -38,22 +38,15 @@
   border-top-width: 0;
   overflow: hidden;
 }
-.cu-friend ul li:nth-child(even) {
-  border-left-width: 0;
-}
 .cu-friend ul li a {
   display: block;
 }
-.cu-friend .noborder {
-  margin-left: 0px;
+.cu-friend ul li:nth-child(even) {
+  border-left-width: 0;
 }
 .cu-friend .img {
   margin: 10px auto;
   overflow: hidden;
-  width: 140px;
-  height: 140px;
-}
-.cu-friend .img img {
   width: 140px;
   height: 140px;
 }
