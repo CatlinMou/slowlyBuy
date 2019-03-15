@@ -41,7 +41,7 @@
 }
 .product .product_price {
   color: #ff841d;
-  font-size: 16px;
+  font-size: 15px;
   padding: 5px 0;
 }
 .product .info {
@@ -50,9 +50,12 @@
   padding: 5px 0;
 }
 .product .content > p {
-  font-size: 16px;
+  font-size: 14px;
   color: #666;
   font-weight: 500;
+}
+.product .content img {
+  width: 40%;
 }
 .product .gobuy {
   width: 100%;
@@ -64,11 +67,14 @@
 }
 .product .gobuy a {
   color: #fff;
-  font-size: 13px;
+  font-size: 17px;
 }
 .two_code {
   width: 100%;
   text-align: center;
+}
+.two_code img {
+  width: 100%;
 }
 .comment {
   background-color: #fff;

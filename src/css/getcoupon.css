@@ -1,0 +1,102 @@
+#header {
+  background-color: red;
+  height: 62px;
+  text-align: center;
+}
+#header h1 {
+  color: #fff;
+  font-size: 20px;
+}
+#header a {
+  color: #fff;
+}
+#header .mui-pull-right {
+  width: 50px;
+  height: 45px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+#header .mui-pull-right .icontubiao {
+  font-size: 35px;
+  font-weight: 600;
+}
+#header .mui-pull-right .appdwon {
+  font-size: 12px;
+}
+.getcoup_views {
+  background-color: #fff;
+  padding-top: 60px;
+  position: relative;
+}
+.getcoup_views #mark {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: #000000;
+  opacity: 0.3;
+  display: none;
+}
+.getcoup_views .hint {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: #ccc;
+  padding: 10px 0;
+}
+.getcoup_views .List_nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.getcoup_views .List_nav li {
+  width: 100%;
+  padding: 6px 0;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+.getcoup_views .List_nav li .arrow {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.getcoup_views .List_nav li a {
+  display: flex;
+  flex-wrap: wrap;
+}
+.getcoup_views .List_nav li a .left {
+  flex: 1;
+  text-align: center;
+}
+.getcoup_views .List_nav li a .left img {
+  width: 70%;
+}
+.getcoup_views .List_nav li a .right {
+  flex: 3;
+}
+.getcoup_views .List_nav li a .right .small_title {
+  font-size: 16px;
+  color: #333;
+}
+.getcoup_views .List_nav li a .right .pirces {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.getcoup_views .List_nav li a .right .validity {
+  color: #f29b46;
+  font-size: 14px;
+}
+.bigImg {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #red;
+}
