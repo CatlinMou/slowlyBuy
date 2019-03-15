@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./lib/mui/css/mui.css">
     
     <link rel="stylesheet" href="./lib/fontawesome/css/font-awesome.css">
-    <link rel="stylesheet" href="./css/MSL_inlanddiscount.css">
+    <link rel="stylesheet" href="./css/inlanddiscount.css">
 
 </head>
 
@@ -45,7 +45,7 @@
 <script type="text/html" id='discountTpl'>
 {{each arr item index}}
 <li class="border-img">
-        <a href="discount.html?productid=0" title="《皮囊》 19.9元">
+        <a href="MSL_discount.html?productid={{item.productId}}" title="《皮囊》 19.9元">
             <div class="img">{{#item.productImg}}</div>
             <div class="title">{{item.productName}}</div>
             <div class="subtit">{{item.productPrice}}</div>
@@ -60,4 +60,4 @@
 <script src="./lib/mui/js/mui.js"></script>
 <script src="./lib/zepto/zepto.js"></script>
 <script src="./lib/arttemplate/template-web.js"></script>
-<script src="./js/MSL_inlanddiscount.js"></script>
+<script src="./js/inlanddiscount.js"></script>
