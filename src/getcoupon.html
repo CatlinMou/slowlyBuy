@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,30 +8,28 @@
     <title>优惠券列表页</title>
     <link rel="stylesheet" href="./lib/mui/css/mui.css">
     <link rel="stylesheet" href="./lib/fontawesome/css/font-awesome.css" />
-   <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/getcoupon.css">
 
 </head>
+
 <body>
+    <!-- 头部 -->
+    <header id="header" class="mui-bar mui-bar-nav">
+        <h1 class="mui-title">肯德基优惠券</h1>
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <a class="mui-action-back mui-icon  mui-pull-right">
+            <span class="mui-icon-download icontubiao"></span>
+            <span class="appdwon">APP下载</span>
+        </a>
+    </header>
 
-        <header id="header" class="mui-bar mui-bar-nav">
-                <h1 class="mui-title">肯德基优惠券</h1>
-                <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
-                <a class="mui-action-back mui-icon  mui-pull-right">
-                    <span class="mui-icon-download icontubiao"></span>
-                    <span class="appdwon">APP下载</span>
-                </a>
-            </header>
+    <div class="getcoup_views">
+        <!-- 列表部分 -->
+        <div class="hint">一点前出示手机中的优惠券按，即可享受优惠</div>
+        <ul class="List_nav">
 
-   <div class="getcoup_views">
-        <div class="bigImg">
-                <span class="left mui-icon mui-icon-arrowleft"></span>
-                <span class="right mui-icon mui-icon-arrowright"></span>
-            </div>
-       <div class="hint">一点前出示手机中的优惠券按，即可享受优惠</div>
-       <ul class="List_nav">
-           
-           <!-- <li>
+            <!-- <li>
                 <a href="javascritp:;">
                     <div class="left"><img src="./images//two_code.png" alt=""></div>
                     <div class="right">
@@ -78,15 +77,27 @@
                                 
                             </a>
                         </li> -->
-       </ul> 
-   </div>
-  <div class="banner"></div>
+        </ul>
+    </div>
+
+    <!-- 轮播图部分 -->
+    <div class="bigImg">
+        <ul>
+            <li><img src="" alt=""></li>
+        </ul>
+        <!-- 左右按钮 -->
+        <span class="left mui-icon mui-icon-arrowleft"></span>
+        <span class="right mui-icon mui-icon-arrowright"></span>
+    </div>
+    <!-- 遮罩层 -->
+    <div id="mask"></div>
 
 </body>
+
 </html>
 <script id="lessPrice" type="text/html">
       {{each arr item index}}
-      <li>
+      <li class='{{item.couponProductId}}'>
             <a href="javascritp:;">
                 <div class="left">{{@item.couponProductImg}}</div>
                 <div class="right">
@@ -101,7 +112,7 @@
         </li>
       {{/each}}
     </script>
-    <script src="./lib/mui/js/mui.js"></script>
-    <script src="./lib/zepto/zepto.js"></script>
-    <script src="./js/getcoupon.js"></script>
+<script src="./lib/mui/js/mui.js"></script>
+<script src="./lib/zepto/zepto.js"></script>
+<script src="./js/getcoupon.js"></script>
 <script src="./lib/arttemplate/template-web.js"></script>

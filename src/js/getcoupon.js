@@ -15,12 +15,21 @@ $(function(){
           dataType: "json",
           success: function (result) {
             let data=result.result;
-            // console.log(data)
+            console.log(data)
             let html=template('lessPrice',{arr:data});
             // console.log(html)
             $('.List_nav').html(html)
           }
       });
+
+      //点击弹出遮罩层
+      $('.List_nav').on('tap',function(){
+        // $('#mark').css({display:'block'})
+        //  let id=$(this).attr()
+        //  console.log(id)
+        let height=$('body').height()
+         $('#mark').css({height:height})
+      })
 
     }
 
