@@ -91,14 +91,18 @@
   background-color: rgba(0, 0, 0, 0.4);
   display: none;
 }
-.mask .swiper-container {
-  width: 500px;
-  height: 500px;
+.mask .box {
+  width: 250px;
+  height: 200px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.mask .swiper-container img {
+.mask .box .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.mask .box .swiper-container img {
   width: 100%;
 }
