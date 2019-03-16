@@ -281,3 +281,77 @@ body {
   text-align: center;
   border-radius: 5px;
 }
+.bijia .category-title {
+  position: relative;
+  overflow: hidden;
+  font-size: 14px;
+}
+.bijia .category-title .breadcrumb {
+  padding: 8px 15px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  overflow: hidden;
+  float: left;
+}
+.bijia .category-title .breadcrumb li {
+  float: left;
+  margin-right: 10px;
+}
+.bijia .category-title > a {
+  float: right;
+  padding: 3px 12px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+.bijia .bijia_goods {
+  background-color: #fff;
+  position: relative;
+  padding-top: 16px;
+}
+.bijia .bijia_goods .bijia_goods_title {
+  text-align: center;
+  font-size: 17px;
+  width: 90%;
+  margin: 0 auto;
+}
+.bijia .bijia_goods .bijia_goods_IMG {
+  text-align: center;
+}
+.bijia .bijia_goods .bijia_goods_collect {
+  position: absolute;
+  right: 20px;
+  bottom: 80px;
+}
+.bijia .bijia_goods .bijia_goods_info {
+  font-size: 14px;
+}
+.bijia .bijia_goods .bijia_goods_info span {
+  margin-right: 30px;
+}
+.bijia .bijia_goods .bijia_goods_info span:last-child {
+  float: right;
+  margin-right: 0;
+}
+.bijia .bijia_goods .bijia_goods_tips {
+  font-size: 14px;
+}
+.bijia .product_com_title {
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  background: #dbdbdb;
+  font-size: 14px;
+  border-top: 1px solid #fff;
+}
+.bijia .product_com_list ul li {
+  font-size: 12px;
+  color: #666;
+  padding: 10px;
+  padding-bottom: 0px;
+  line-height: 18px;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+}
