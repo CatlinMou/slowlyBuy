@@ -1,0 +1,51 @@
+@import "common";
+body{
+    width: 100%;
+}
+.gsListHead{
+    width: 100%;
+    .mui-table-view{
+        width: 100%;
+        display: flex;
+        .shopAndArea{
+            flex:1;
+            display: flex;
+            .mui-table-view-cell{
+                flex:2;
+            }
+        }
+        .search{
+            width: 50px;
+            font-size: 4px;
+        }
+    }
+  
+    
+}
+.gsListContent{
+    width: 100%;
+    #theListHimself{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        li{
+            background-color: #ffffff;
+            width: 45%; 
+            margin:10px;
+            .pic{
+              width: 100%;
+              text-align: center;
+            }
+            .title{
+                font-size: 14px;
+            }
+            .other{
+                .other-left{
+                    font-weight: bold;
+                    color:#f0ad4e;
+                }
+            }
+        }
+    }
+}
