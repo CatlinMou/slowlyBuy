@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+    <!-- 头部 -->
+    <header id="header">
+        <a class="logo" href="#">
+            <img src="./images/header_logo.png" alt="">
+        </a>
+        <a class="app" href="">
+            <img src="./images/header_app.png" alt="">
+        </a>
+    </header>
+
+    <!-- 搜索框 -->
+    <section id="search">
+        <form action="">
+            <input type="search" placeholder="请输入你想比价的商品">
+            <input type="submit" value="搜索">
+        </form>
+    </section>
+
+    <!-- 首页菜单 -->
+    <section id="menu">
+        
+    </section>
+
+    <!-- 超值折扣 -->
+    <section id="recommen">
+        <div class="recommen-title">
+            <h5>超值折扣推荐</h5>
+            <img src="./images/header_app.png" alt="">
+        </div>
+        <div class="recommen-list">
+            
+        </div>
+        <div class="recommen-more">
+            <a href="#">更多优惠信息&gt;&gt;</a>
+        </div>
+        <div class="recommen-title">
+            <h5>品牌排行</h5>
+            <img src="images/header_app.png" alt="">
+        </div>
+    </section>
+
+    <!-- 底部 -->
+    <footer id="footer">
+        <div class="row">
+            <div class="index_login">
+                <a href="javascript:;">登录</a>
+            </div>
+            <div class="index_register">
+                <a href="javascript:;">注册</a>
+            </div>
+            <div class="index_top">
+                <a href="javascript:;">返回顶部</a>
+            </div>
+        </div>
+        <p><a href="">手机app下载 </a><a href="">慢慢买手机版 </a> -- 掌上比价平台</p>
+        <p>m.manmanbuy.com </p>
+    </footer>
+
+</body>
+
+<!-- 渲染模板 开始 -->
+
+<!-- 首页菜单 开始 -->
+<script id="indexList" type="text/html">
+    {{each arr item index}}
+        <div>
+            <a href="{{item.titlehref}}?id={{item.indexmenuId}}">
+                {{@ item.img}}
+                <p>{{item.name}}</p>
+            </a>
+        </div>
+    {{/each}}
+</script>
+<!-- 首页菜单 结束 -->
+
+<!-- 超值折扣 开始 -->
+<script id="lessPrice" type="text/html">
+    {{each arr item index}}
+    <div class="media">
+        <a class="media-left" href="moneyproduct.html?productid={{item.productId}}">
+            {{@ item.productImg2}}
+        </a>
+        <div class="media-body">
+            <a href="moneyproduct.html?productid=20">
+                <h5>{{item.productName}}</h5>
+                <p class="price">{{item.productPinkage}}</p>
+                <span class="from">{{item.productFrom}} | {{item.productTime}}</span>
+                <span class="comment">
+                    <i>
+                    </i>
+                    {{item.productComCount}}
+                </span>
+            </a>-
+        </div>
+    </div>
+    {{/each}}
+</script>
+<!-- 超值折扣 结束 -->
+
+<!-- 渲染模板 结束 -->
+
+<script src="./lib/zepto/zepto.js"></script>
+<script src="./lib/arttemplate/template-web.js"></script>
+<!-- <script src="./js/common.js"></script> -->
+<script src="./js/index.js"></script>
+
+</html>
