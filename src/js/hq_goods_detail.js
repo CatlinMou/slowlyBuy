@@ -20,9 +20,9 @@ $(function() {
 
         $.ajax({
             type: "get",
-            url: "http://193.112.55.79:9090/api/getmoneyctrl",
+            url: "http://193.112.55.79:9090/api/getdiscountproduct",
             data: {
-                productId: getQueryString('productid')
+                productid: getQueryString('productid')
             },
             success: function(result) {
                 console.log(result)

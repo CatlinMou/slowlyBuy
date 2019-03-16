@@ -37,22 +37,33 @@ html,body{
           color: #999999;
         }
         .container_img{
-            width: 100%;
+            width: 100%;           
             overflow: hidden;
-            >p{
-                float: left;
-            }
-            >.right_img{
-                float: right;
-                width: 120px;
-                height: 120px;
-                >img{
+                >#lg_img{
+                    float: left;
                     display: block;
+                    width: 350px;
+                    height: 350px;
+                    >img{
+                        display: block;
+                        width: 350px;
+                        height: 350px;
+                    }
+                }
+                >.right_img{
+                    float: right;
+                    flex:1;
                     width: 120px;
                     height: 120px;
-                    padding: 10px;
+                    >img{
+                        display: block;
+                        width: 120px;
+                        height: 120px;
+                        padding: 10px;
+                    }
                 }
-            }
+            
+
             .btn_buy{
                 float: left;
                 width: 100%;

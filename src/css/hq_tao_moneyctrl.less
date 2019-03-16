@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    width: 100%;
+    max-width: 640px;
+}
+
+// 头部样式
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 123, 0);
+    padding: 10px;
+}
+
+// 首页菜单
+.moneyctrl{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    >.recomment_list{
+        width: 100%;
+        border-bottom: 1px solid black;
+        >.media{
+            width: 100%;
+            height: 120px;
+            padding: 10px;
+            display: flex;
+            >.media-left{
+                float:left;
+                display: block;
+                width: 100px;
+                height: 100px;
+                margin-right: 10px;
+                >img{
+                    display: block;
+                    width: 100%;
+                    // margin-right: 10px;
+                }
+            }
+            >.media-body{
+                float: left;
+                flex: 1;
+                height: 100px;
+                h5{
+                    color: black;
+                    height: 15px;
+                    margin: 10px 0;
+                }
+                p{
+                    color: red;
+                }
+                span{
+                    color: rgb(126, 122, 122);
+                    font-size: 12px;
+                }
+                span:nth-of-type(1){
+                    float: left;
+                }
+                span:nth-of-type(2){
+                    float: right;
+                    padding-right: 10px;
+                    
+                }
+            }
+        }
+    }
+}
+
+
+
+
+// 分页器样式
+.sort-page{
+    >.mui-pager{
+        >li{
+           >a{
+            color: black;
+           }
+        }
+    }
+}
+
+
+
+
+
+/* 尾部区域 */ 
+#footer {
+    width: 100%;
+    background-color: #fff;
+    > .row {
+        display: flex;
+        > div {
+            flex: 1;
+            text-align: center;
+            border: 1px solid #ccc;
+            height: 30px;
+            line-height: 30px;
+            > a {
+                > img {
+                    height: 15px;
+                    width: 15px;
+                }
+            }
+        }
+    }
+    > p {
+        margin: 10px;
+        text-align: center;
+        font-size: 12px;
+        > a:first-child {
+            color: red;
+        }
+    }
+  }

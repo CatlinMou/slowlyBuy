@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  width: 100%;
+  max-width: 640px;
+}
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: #ff7b00;
+  padding: 10px;
+}
+.moneyctrl {
+  width: 100%;
+  background-color: #ffffff;
+}
+.moneyctrl > .recomment_list {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+.moneyctrl > .recomment_list > .media {
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  display: flex;
+}
+.moneyctrl > .recomment_list > .media > .media-left {
+  float: left;
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+.moneyctrl > .recomment_list > .media > .media-left > img {
+  display: block;
+  width: 100%;
+}
+.moneyctrl > .recomment_list > .media > .media-body {
+  float: left;
+  flex: 1;
+  height: 100px;
+}
+.moneyctrl > .recomment_list > .media > .media-body h5 {
+  color: black;
+  height: 15px;
+  margin: 10px 0;
+}
+.moneyctrl > .recomment_list > .media > .media-body p {
+  color: red;
+}
+.moneyctrl > .recomment_list > .media > .media-body span {
+  color: #7e7a7a;
+  font-size: 12px;
+}
+.moneyctrl > .recomment_list > .media > .media-body span:nth-of-type(1) {
+  float: left;
+}
+.moneyctrl > .recomment_list > .media > .media-body span:nth-of-type(2) {
+  float: right;
+  padding-right: 10px;
+}
+.sort-page > .mui-pager > li > a {
+  color: black;
+}
+/* 尾部区域 */
+#footer {
+  width: 100%;
+  background-color: #fff;
+}
+#footer > .row {
+  display: flex;
+}
+#footer > .row > div {
+  flex: 1;
+  text-align: center;
+  border: 1px solid #ccc;
+  height: 30px;
+  line-height: 30px;
+}
+#footer > .row > div > a > img {
+  height: 15px;
+  width: 15px;
+}
+#footer > p {
+  margin: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+#footer > p > a:first-child {
+  color: red;
+}
