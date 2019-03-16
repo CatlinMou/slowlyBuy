@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    width: 100%;
+    max-width: 640px;
+}
+
+// 头部样式
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 123, 0);
+    padding: 16px 10px 5px 10px;
+}
+
+
+
+// 详情页内容开始
+.main{
+    width: 100%;
+    border: none;
+    padding: 0 15px;
+    .container{
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        .title{
+            margin: 0;
+            font-size: 19px;
+            padding: 15px 10px 5px 10px;
+        }
+        .small_title{
+            font-size: 12px;
+            margin: 12px 0;
+            padding-left: 20px;
+          color: #999999;
+        }
+        .container_img{
+            width: 100%;
+            overflow: hidden;
+            >p{
+                float: left;
+            }
+            >.right_img{
+                float: right;
+                width: 120px;
+                height: 120px;
+                >img{
+                    display: block;
+                    width: 120px;
+                    height: 120px;
+                    padding: 10px;
+                }
+            }
+            .btn_buy{
+                float: left;
+                width: 100%;
+                height: 30px;
+                margin: 40px 0;
+                line-height: 30px;
+                text-align: center;
+                color: #fff;
+                >a{
+                    display: block;
+                    width: 95%;
+                    height: 100%;
+                    
+                    margin-left: 15px;
+                    background-color: orange;
+                    border-radius: 5px;
+                }
+            }
+        }
+        // 发表评论
+        .comment{
+            width: 100%;
+            height: 22px;
+            padding: 6px 8px;
+        }
+        .int{
+            position: relative;
+            >.comment_btn{
+                position: absolute;
+                bottom: 20px;
+                right: 0;
+                >.tjdp{
+                    width: 100px;
+                    height: 40px;
+                    font-size: 16px;
+                    background-color: orange;
+                    border: none;
+                }
+            }
+        }
+
+        // 最新评论
+        .newcomment{
+            width: 100%;
+            height: 22px;
+            padding: 6px 8px;
+        }
+        .comment_list{
+            width: 100%;
+            li{
+                list-style: none;
+                padding: 18px 10px;
+                width: 100%;
+                height: 80px;
+            .userimg{
+                width: 40px;
+                height: 40px;
+                float: left;
+                img{
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                }
+            }
+            .name{
+                overflow: hidden;
+                padding-left: 10px;
+                .username{
+                    float: left;
+                    color: skyblue;
+                }
+                .time{
+                    float: right;
+                    color: #999999;
+                }
+            }
+            
+        }
+    }
+    .comment_list > ul >li >.content{
+    font-size: 15px !important;
+    color: #606060;
+    line-height: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* 尾部区域 */ 
+#footer {
+    width: 100%;
+    background-color: #fff;
+    > .row {
+        display: flex;
+        > div {
+            flex: 1;
+            text-align: center;
+            border: 1px solid #ccc;
+            height: 30px;
+            line-height: 30px;
+            > a {
+                > img {
+                    height: 15px;
+                    width: 15px;
+                }
+            }
+        }
+    }
+    > p {
+        margin: 10px;
+        text-align: center;
+        font-size: 12px;
+        > a:first-child {
+            color: red;
+        }
+    }
+  }
