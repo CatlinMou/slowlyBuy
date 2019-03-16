@@ -37,11 +37,20 @@ body {
   width: 100%;
   overflow: hidden;
 }
-.main .container .container_img > p {
+.main .container .container_img > #lg_img {
   float: left;
+  display: block;
+  width: 350px;
+  height: 350px;
+}
+.main .container .container_img > #lg_img > img {
+  display: block;
+  width: 350px;
+  height: 350px;
 }
 .main .container .container_img > .right_img {
   float: right;
+  flex: 1;
   width: 120px;
   height: 120px;
 }
@@ -51,15 +60,16 @@ body {
   height: 120px;
   padding: 10px;
 }
-.main .container .container_img .btn_buy {
+.main .container .btn_buy {
   float: left;
   width: 100%;
   height: 30px;
   margin: 40px 0;
   line-height: 30px;
   text-align: center;
+  color: #fff;
 }
-.main .container .container_img .btn_buy > a {
+.main .container .btn_buy > a {
   display: block;
   width: 95%;
   height: 100%;
@@ -67,60 +77,67 @@ body {
   background-color: orange;
   border-radius: 5px;
 }
-.main .container .comment {
+.main .comment {
   width: 100%;
   height: 22px;
   padding: 6px 8px;
 }
-.main .container .int {
+.main .int {
   position: relative;
 }
-.main .container .int > .comment_btn {
+.main .int > .comment_btn {
   position: absolute;
   bottom: 20px;
   right: 0;
 }
-.main .container .int > .comment_btn > .tjdp {
+.main .int > .comment_btn > .tjdp {
   width: 100px;
   height: 40px;
   font-size: 16px;
   background-color: orange;
   border: none;
 }
-.main .container .comment_list {
+.main .newcomment {
+  width: 100%;
+  height: 22px;
+  padding: 6px 8px;
+}
+.main .comment_list {
   width: 100%;
 }
-.main .container .comment_list li {
+.main .comment_list li {
   list-style: none;
   padding: 18px 10px;
   width: 100%;
   height: 80px;
 }
-.main .container .comment_list li .userimg {
+.main .comment_list li .userimg {
   width: 40px;
   height: 40px;
   float: left;
 }
-.main .container .comment_list li .userimg img {
+.main .comment_list li .userimg img {
   display: block;
   width: 40px;
   height: 40px;
   border-radius: 50%;
 }
-.main .container .comment_list li .content {
-  padding: 10px;
-}
-.main .container .comment_list .name {
+.main .comment_list li .name {
   overflow: hidden;
   padding-left: 10px;
 }
-.main .container .comment_list .name .username {
+.main .comment_list li .name .username {
   float: left;
   color: skyblue;
 }
-.main .container .comment_list .name .time {
+.main .comment_list li .name .time {
   float: right;
   color: #999999;
+}
+.main .comment_list > ul > li > .content {
+  font-size: 15px !important;
+  color: #606060;
+  line-height: 20px;
 }
 /* 尾部区域 */
 #footer {
