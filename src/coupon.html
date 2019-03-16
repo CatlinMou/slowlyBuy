@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>优惠券</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <link rel="stylesheet" href="./lib/fontawesome/css/font-awesome.css" />
+    
+    <link rel="stylesheet" href="./css/coupon.css" />
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header id="header" class="mui-bar mui-bar-nav">
+        <h1 class="mui-title">优惠券</h1>
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <a class="mui-action-back mui-icon  mui-pull-right">
+            <span class="mui-icon-download icontubiao"></span>
+            <span class="appdwon">APP下载</span>
+        </a>
+    </header>
+<!-- 图片列表部分 -->
+    <div class="coupon_views">
+        <ul class="viewList">
+        </ul>
+    </div>
+
+
+    <!-- 面包屑导航 -->
+    <div class="crumbs_nav">
+            <ul class="crum_Nav">
+
+                    <li>
+                        <a href="#">主页&gt;</a>
+                    </li>
+                    <li>
+                        <a href="#">优惠券&gt;</a>
+                    </li>
+                    
+                </ul>
+    </div>
+
+
+    <!-- 尾部 -->
+    <footer id="footer">
+            <div class="row">
+                <div class="col-xs-4">
+                    <a href="">登录</a>
+                </div>
+                <div class="col-xs-4">
+                    <a href="">注册</a>
+                </div>
+                <div class="col-xs-4">
+                    <a href="#">返回顶部</a>
+                </div>
+            </div>
+            <p><a href="">手机app下载 </a><a href="">慢慢买手机版 </a> -- 掌上比价平台</p>
+            <p>m.manmanbuy.com </p>
+        </footer>
+
+</body>
+
+</html>
+<script type='text/html' id='coupTpl'>
+{{each arr item index}}
+<li>
+        <a href="getcoupon.html?couponid={{item.couponId}}">
+            <img src="{{item.couponImg}}" alt="">
+            <span>{{item.couponTitle}}</span>
+        </a>
+    </li>
+{{/each}}
+</script>
+
+
+
+<script src="./lib/mui/js/mui.js"></script>
+<script src="./lib/zepto/zepto.js"></script>
+<script src="./lib/arttemplate/template-web.js"></script>
+<script src="./js/coupon.js"></script>

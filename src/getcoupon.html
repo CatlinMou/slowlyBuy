@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>优惠券列表页</title>
+<<<<<<< HEAD
+    <link rel="stylesheet" href="./css/common.css">
+=======
+    <link rel="stylesheet" href="./swiper/css/swiper.min.css">
+>>>>>>> 9d25f483373d084bb686062da38fc2aa0ca955f4
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <link rel="stylesheet" href="./lib/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="./css/getcoupon.css">
+
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header id="header" class="mui-bar mui-bar-nav">
+        <h1 class="mui-title">肯德基优惠券</h1>
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <a class="mui-action-back mui-icon  mui-pull-right">
+            <span class="mui-icon-download icontubiao"></span>
+            <span class="appdwon">APP下载</span>
+        </a>
+    </header>
+
+    <div class="getcoup_views">
+        <!-- 列表部分 -->
+        <div class="hint">一点前出示手机中的优惠券按，即可享受优惠</div>
+        <ul class="List_nav">
+
+            <!-- <li>
+                <a href="javascritp:;">
+                    <div class="left"><img src="./images//two_code.png" alt=""></div>
+                    <div class="right">
+                        <div class="small_title">啊JFK辣椒粉急啊急啊就发</div>
+                        <div class="pirces">￥5</div>
+                        <div class="validity">有效期至</div>
+ 
+                    </div>
+                    
+                </a>
+            </li>
+            <li>
+                    <a href="javascritp:;">
+                        <div class="left"><img src="./images//two_code.png" alt=""></div>
+                        <div class="right">
+                            <div class="small_title">啊JFK辣椒粉急啊急啊就发</div>
+                            <div class="pirces">￥5</div>
+                            <div class="validity">有效期至</div>
+     
+                        </div>
+                        
+                    </a>
+                </li>
+                <li>
+                        <a href="javascritp:;">
+                            <div class="left"><img src="./images//two_code.png" alt=""></div>
+                            <div class="right">
+                                <div class="small_title">啊JFK辣椒粉急啊急啊就发</div>
+                                <div class="pirces">￥5</div>
+                                <div class="validity">有效期至</div>
+         
+                            </div>
+                            
+                        </a>
+                    </li>
+                    <li>
+                            <a href="javascritp:;">
+                                <div class="left"><img src="./images//two_code.png" alt=""></div>
+                                <div class="right">
+                                    <div class="small_title">啊JFK辣椒粉急啊急啊就发</div>
+                                    <div class="pirces">￥5</div>
+                                    <div class="validity">有效期至</div>
+             
+                                </div>
+                                
+                            </a>
+                        </li> -->
+        </ul>
+    
+    </div>
+
+    <!-- 轮播图部分 -->
+    <div class="mask">
+            <div class="swiper-container swiper-container-initialized swiper-container-horizontal">
+                    <div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-12128px, 0px, 0px);">
+
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false"></div>
+                    <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="false"></div>
+                  <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+    </div>
+    
+    <!-- 遮罩层 -->
+<<<<<<< HEAD
+    <div id="mark"></div>
+
+=======
+  
+>>>>>>> 9d25f483373d084bb686062da38fc2aa0ca955f4
+</body>
+
+</html>
+<script id="slidertpl" type="text/html">
+    {{each arr item index}}
+    <!-- <div class="mui-slider-item"><a href="#">{{@arr[index].couponProductImg}}</a></div> -->
+    <div class="swiper-slide"><a href="#">{{@arr[index].couponProductImg}}</a></div>
+    {{/each}}
+</script>
+
+<script id="lessPrice" type="text/html">
+      {{each arr item index}}
+      <li class='{{item.couponProductId}}'>
+            <a href="javascritp:;">
+                <div class="left">{{@item.couponProductImg}}</div>
+                <div class="right">
+                    <div class="small_title">{{item.couponProductName}}</div>
+                    <div class="pirces">{{item.couponProductPrice}}</div>
+                    <div class="validity">{{item.couponProductTime}}</div>
+            
+                </div>
+              <!-- 箭头   -->
+              <span class="arrow mui-icon mui-icon-arrowright"></span>
+            </a>
+        </li>
+      {{/each}}
+    </script>
+<script src="./lib/mui/js/mui.js"></script>
+<script src="./lib/zepto/zepto.js"></script>
+<<<<<<< HEAD
+<script src="./lib/arttemplate/template-web.js"></script>
+<script src="./js/getcoupon.js"></script>
+=======
+<script src="./swiper/js/swiper.min.js"></script>
+<script src="./lib/arttemplate/template-web.js"></script>
+<script src="./js/getcoupon.js"></script>
+>>>>>>> 9d25f483373d084bb686062da38fc2aa0ca955f4
