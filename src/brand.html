@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/brand.css">
+</head>
+
+<body>
+
+    <!-- 头部 -->
+    <header id="header">
+        <a class="logo" href="#">
+            <img src="./images/header_logo.png" alt="">
+        </a>
+        <a class="app" href="">
+            <img src="./images/header_app.png" alt="">
+        </a>
+    </header>
+
+    <!-- 搜索框 -->
+    <section id="search">
+        <form action="">
+            <input type="search" placeholder="请输入你想比价的商品">
+            <input type="submit" value="搜索">
+        </form>
+    </section>
+
+    <div class="brandList">
+
+        <!--路径导航-->
+        <div class="product-title">
+            <ol class="breadcrumb">
+                <li>首页 > </li>
+                <li>全部分类 > </li>
+                <li>品牌大全 > </li>
+            </ol>
+            <a class="btn btn-default" href="">筛选</a>
+        </div>
+
+        <!-- 品牌列表 -->
+        <div class="category-list">
+            <div class="hd">
+                <h3>平板电视哪个牌子好</h3>
+            </div>
+            <div class="brand-list">
+                <ul class="category-title">
+                    <!-- <li>
+                        <a>
+                            <em class="top1">1</em>
+                            <div class="inner">
+                                <div class="tit">三星平板电视</div>
+                                <p>30天全网销售：242408件</p>
+                            </div>
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="hd">
+                <h3>平板电视产品销量排行</h3>
+            </div>
+            <div class="product-list">
+                <!-- <div class="media">
+                    <a class="media-left" href="bijia.html?productId=1">
+                        <img src="http://pro.zuyushop.com:8015/ProPic/201510/Thumb/Thumb_201510001104382491.jpg" alt="乐视TV(Letv) 超3 X55 55英寸智能LED液晶 超级电视 4K超清电视"
+                            width="100" height="100">
+                    </a>
+                    <div class="media-body">
+                        <a href="bijia.html?productId=1">
+                            <div class="media_body_title">乐视TV(Letv) 超3 X55 55英寸智能LED液晶 超级电视 4K超清电视</div>
+                            <div class="price">￥3266.00</div>
+                            <div class="media_body_other"><em>报价(6)</em><em>评论(3522)</em></div>
+                        </a>
+                    </div>
+                </div> -->
+            </div>
+            <div class="hd">
+                <h3>平板电视最新评论</h3>
+            </div>
+            <div class="product-com">
+                <ul>
+                    <li>
+                        <div class="protit">
+                            <div class="protit_IMG">
+                                <img src="http://pro.zuyushop.com:8015/ProPic/201510/Thumb/Thumb_201510001104382491.jpg"
+                                    alt="乐视TV(Letv) 超3 X55 55英寸智能LED液晶 超级电视 4K超清电视" width="100" height="100">
+                            </div>
+                            <div class="protit_title">
+                                乐视TV(Letv) 超3 X55 55英寸智能LED液晶 超级电视 4K超清电视
+                            </div>
+                        </div>
+                        <div class="comment">
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <footer id="footer">
+        <div class="row">
+            <div class="index_login">
+                <a href="javascript:;">登录</a>
+            </div>
+            <div class="index_register">
+                <a href="javascript:;">注册</a>
+            </div>
+            <div class="index_top">
+                <a href="javascript:;">返回顶部</a>
+            </div>
+        </div>
+        <p><a href="">手机app下载 </a><a href="">慢慢买手机版 </a> -- 掌上比价平台</p>
+        <p>m.manmanbuy.com </p>
+    </footer>
+
+</body>
+<u></u>
+<!-- 渲染模板 开始 -->
+
+<!-- 品牌排行 开始 -->
+<script id="brandList" type="text/html">
+    {{each arr item index}}
+        <li>
+            <a>
+                <em class="top{{index + 1}}">{{index + 1}}</em>
+                <div class="inner">
+                    <div class="tit">{{item.brandName}}</div>
+                    <p>{{item.brandInfo}}</p>
+                </div>
+            </a>
+        </li>
+    {{/each}}
+</script>
+<!-- 品牌排行 结束 -->
+
+<!-- 销量排行 开始 -->
+<script id="brandList" type="text/html">
+    {{each arr item index}}
+        <div class="media">
+            <a class="media-left" href="bijia.html?productId=1">
+                <img src="http://pro.zuyushop.com:8015/ProPic/201510/Thumb/Thumb_201510001104382491.jpg" alt="乐视TV(Letv) 超3 X55 55英寸智能LED液晶 超级电视 4K超清电视"
+                    width="100" height="100">
+            </a>
+            <div class="media-body">
+                <a href="bijia.html?productId=1">
+                    <div class="media_body_title">乐视TV(Letv) 超3 X55 55英寸智能LED液晶 超级电视 4K超清电视</div>
+                    <div class="price">￥3266.00</div>
+                    <div class="media_body_other"><em>报价(6)</em><em>评论(3522)</em></div>
+                </a>
+            </div>
+        </div>
+    {{/each}}
+</script>
+<!-- 销量排行 结束 -->
+
+<!-- 渲染模板 结束 -->
+
+<script src="./lib/zepto/zepto.js"></script>
+<script src="./lib/arttemplate/template-web.js"></script>
+<!-- <script src="./js/common.js"></script> -->
+<script src="./js/brand.js"></script>
+
+</html>

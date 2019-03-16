@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/baicaijia.css">
+</head>
+
+<body>
+
+    <!-- 头部 -->
+    <header id="header">
+        白菜价-淘宝内部券
+    </header>
+
+    <!-- 导航栏 -->
+    <div id="wrapper">
+        <ul class="nav_title">
+
+        </ul>
+        <div></div>
+    </div>
+
+    <!-- 商品列表 -->
+    <div class="goodsList">
+        <ul class="goddsItems">
+           
+        </ul>
+    </div>
+
+    <!-- 底部 -->
+    <footer id="footer">
+        <div class="row">
+            <div class="index_login">
+                <a href="javascript:;">登录</a>
+            </div>
+            <div class="index_register">
+                <a href="javascript:;">注册</a>
+            </div>
+            <div class="index_top">
+                <a href="javascript:;">返回顶部</a>
+            </div>
+        </div>
+        <p><a href="">手机app下载 </a><a href="">慢慢买手机版 </a> -- 掌上比价平台</p>
+        <p>m.manmanbuy.com </p>
+    </footer>
+
+</body>
+
+<!-- 渲染模板 开始 -->
+
+<!-- 导航栏 开始 -->
+<script id="navTpl" type="text/html">
+    {{each arr item index}}
+        <li class="{{index == 0 ? 'active' : ''}}"><a href="javascript:;" data-titleid="{{index}}">{{item.title}}</a></li>
+    {{/each}}
+</script>
+<!-- 导航栏 结束 -->
+
+<!-- 商品列表 开始 -->
+<script id="goodsTpl" type="text/html">
+    {{each arr item index}}
+        <li>
+            <div class="goodsList_all">
+                <a class="goodsList_IMG">
+                    {{@ item.productImg}}
+                </a>
+                <div class="goodsList_content">
+                    <a class="goodsList_content_title">
+                        {{@ item.productName}}
+                    </a>
+                    <div class="goodsList_content_price">
+                        {{@ item.productPrice}}
+                    </div>
+                    <div class="goodsList_content_bar">
+                        <i><em style="width:1%;"></em><span>1%</span></i>
+                        <b>已领82张</b>
+                    </div>
+                    <div class="goodsList_content_lessPrice">
+                        <div class="goodsList_content_lessPrice_left">
+                            <a class="ticket">
+                                点此领15元优惠券
+                            </a>
+                        </div>
+                        <div class="goodsList_content_lessPrice_right">
+                            <a class="orderLink">
+                                下单链接
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    {{/each}}
+</script>
+<!-- 商品列表 结束 -->
+
+<!-- 渲染模板 结束 -->
+
+<script src="./lib/jquery/jquery-1.12.2.js"></script>
+<script src="./lib/zepto/zepto.js"></script>
+<script src="./lib/arttemplate/template-web.js"></script>
+<script src="./lib/iscroll/iscroll.js"></script>
+<!-- <script src="./js/common.js"></script> -->
+<script src="./js/baicaijia.js"></script>
+
+</html>
