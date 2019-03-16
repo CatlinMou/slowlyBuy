@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>国内折扣</title>
-    <link rel="stylesheet" href="">
-    
+    <link rel="stylesheet" href="./css/common.css">   
     <link rel="stylesheet" href="./lib/mui/css/mui.css">
-    
     <link rel="stylesheet" href="./lib/fontawesome/css/font-awesome.css">
     <link rel="stylesheet" href="./css/inlanddiscount.css">
 
@@ -48,7 +46,7 @@
 {{each arr item index}} 
 <li class="border-img">
         <a href="discount.html?productid={{item.productId}}" title="《皮囊》 19.9元">
-            <div class="img">{{#item.productImg}}</div>
+            <div class="img">{{@item.productImg}}</div>
             <div class="title">{{item.productName}}</div>
             <div class="subtit">{{item.productPrice}}</div>
             <div class="info">
