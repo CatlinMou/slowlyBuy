@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <link rel="stylesheet" href="./lib/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="./css/gsproduct.css" />
+
+</head>
+<body>
+    <header id="header">
+    <a class="logo" href="#">
+        <img src="./images/header_logo.png" alt="">
+    </a>
+    <a class="app" href="">
+        <img src="./images/header_app.png" alt="">
+    </a>
+    </header>
+
+    <div class="mmm_gsproduct">
+        <div class="gsproductList">
+            <div class="gsListHead">
+                <ul class="mui-table-view">
+                    <div class="shopAndArea">
+
+                    </div>
+                    <li class="search">假装这里有放大镜</li>
+                </ul>
+            </div>
+            <div class="gsListContent">
+                <ul id="theListHimself">
+                  
+                 
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<script type="text/html" id="shoptpl">
+<li class="mui-table-view-cell mui-collapse">
+        <a class="mui-navigate-right shopinnerText" href="#">京东</a>
+        <div class="mui-collapse-content">
+            <ul class="shop">
+                {{each data value index}}
+                <li data-shopId="{{data[index].shopId}}">{{data[index].shopName}}</li>
+                {{/each}}
+            </ul>
+        </div>
+    </li>
+</script>
+<script type="text/html" id="areatpl">
+    <li class="mui-table-view-cell mui-collapse">
+            <a class="mui-navigate-right areainnerText" href="#">华北</a>
+            <div class="mui-collapse-content">
+                <ul class="area">
+                    {{each data value index}}
+                    <li data-areaId="{{data[index].areaId}}">{{data[index].areaName}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+        </li>
+    <li class="mui-table-view-cell mui-collapse">
+        <a class="mui-navigate-right" href="#">没有数据写个文雅</a>
+        <div class="mui-collapse-content">
+            <ul class="price">
+                <li>没有数据写个文雅</li>
+            </ul>
+        </div>
+    </li>
+    </script>
+<script type="text/html" id="productlisttpl">
+    {{each data value index}}
+        <li>
+            <a href="#">
+                <div class="pic">
+                    <img src="{{data[index].productImg}}" alt="">
+                </div>
+                <div class="title">{{data[index].productName}}</div>
+                <div class="other">
+                    <div class="other-left mui-pull-left">{{data[index].productPrice}}</div>
+                    <div class="other-right mui-pull-right">
+                            <button type="button" class="mui-btn mui-btn-warning">凑个单</button>
+                    </div>
+                </div>
+            </a>
+        </li>
+    {{/each}}
+    </script>
+
+<script src="./lib/mui/js/mui.js"></script>
+<script src="./lib/zepto/zepto.js"></script>
+<script src="./lib/arttemplate/template-web.js"></script>
+<script src="./js/gsproduct.js"></script>

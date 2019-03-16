@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./lib/mui/css/mui.css">
+    <link rel="stylesheet" href="./lib/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="./css/category.css" />
+</head>
+<body>
+    <header id="header">
+    <a class="logo" href="#">
+        <img src="./images/header_logo.png" alt="">
+    </a>
+    <a class="app" href="">
+        <img src="./images/header_app.png" alt="">
+    </a>
+    </header>
+    <section id="search">
+            <form action="">
+                <input type="search" placeholder="请输入你想比价的商品">
+                <input type="submit" value="搜索">
+            </form>
+    </section>
+    <div class="mmm_view">    
+    </div>
+    <footer id="footer">
+            <div class="row">
+                <div class="col-xs-4">
+                    <a href="">登录</a>
+                </div>
+                <div class="col-xs-4">
+                    <a href="">注册</a>
+                </div>
+                <div class="col-xs-4">
+                    <a href="#">返回顶部</a>
+                </div>
+            </div>
+            <p><a href="">手机app下载 </a><a href="">慢慢买手机版 </a> -- 掌上比价平台</p>
+            <p>m.manmanbuy.com </p>
+    </footer>
+</body>
+</html>
+<script type="text/html" id="categorytitletpl">
+    <ul class="mui-table-view">
+        {{each arr value index}}
+        <li class="mui-table-view-cell mui-collapse">
+            <a class="mui-navigate-right cat_title" href="#" data-titleId="{{arr[index].titleId}}">{{arr[index].title}}</a>
+            <div class="mui-collapse-content">
+                <ul class="cat_list">
+                    <li></li>
+                </ul>
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+
+<script src="./lib/mui/js/mui.js"></script>
+<script src="./lib/zepto/zepto.js"></script>
+<script src="./lib/arttemplate/template-web.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/category.js"></script>
