@@ -47,7 +47,6 @@ $(function () {
       },
       dataType: 'json',
       success: result => {
-        console.log(result);
         let data = result.result;
         let html = template('goodsTpl', {
           arr: data
@@ -62,6 +61,7 @@ $(function () {
     $('.nav_title').on('click', 'li', function () {
       $('.nav_title li').removeClass('active');
       $(this).addClass('active');
+      getGoodsList($(this).attr('value'));
     });
   } // 获取 url 上的 id
 

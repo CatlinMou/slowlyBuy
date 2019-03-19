@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>商品结构</title>
-    <link rel="stylesheet" href="./lib/mui/css/mui.css" /> <!-- 框架css -->
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="./lib/fontawesome/css/font-awesome.css" /><!-- 插件css -->
     <link rel="stylesheet" href="./css/ZZH_List_of_goods.css"> <!-- 网页样式文件 -->
 </head>
 
 <body>
-    <!-- GG  head-->
+    <!-- 头部 -->
     <header id="header">
         <a class="logo" href="#">
             <img src="./images/header_logo.png" alt="">
@@ -22,78 +22,69 @@
             <img src="./images/header_app.png" alt="">
         </a>
     </header>
-    <!-- GG 搜索栏 -->
+
+    <!-- 搜索栏 -->
     <section id="search">
         <form action="">
             <input type="search" placeholder="请输入你想比价的商品">
             <input type="submit" value="搜索">
         </form>
     </section>
-    <!-- 面包屑导航模板引擎 开始 -->
-    <script id='zzh_navtpl' type="text/html">
-        <ul>
-            <li><a href="#">首页</a>
-                <i>></i></li>
-                
-            <li><a href="mmm_category.html">分类大全</a>
-                <i>></i></li>
-            {{each zhu value index}}
-            <li><a href="">{{zhu[index].category}}</a></li>
-            {{/each}}
-        </ul>
-        <a href="#" class='zzh_nav_right'>筛选</a>
-    
-    </script>
-    <!-- 面包屑导航渲染成功 -->
-    <div class="zzh_nav clearfix">
+
+    <!-- 分类菜单 -->
+    <div class="fenlei">
+
     </div>
 
-    <!-- 列表模板引擎 开始 -->
-    <script id='zzh_detailstpl' type="text/html">
-        {{each zhu value index}}
-    <div class="zzh_details">
-        <div class="zzh_details_img">
-            <a href="ZZH_Goods_details.html?productid={{zhu[index].productId}}">{{@zhu[index].productImg}}</a>
+    <!-- 分页器 -->
+    <div class="product-page">
+        <input type="button" value="上一页" class="btn btn-default pull-left pre">
+        <input type="button" value="下一页" class="btn btn-default pull-right nex">
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                aria-expanded="false">
+                第1页
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            </ul>
         </div>
-
-      <div class="zzh_details_instructions">
-        <a href="ZZH_Goods_details.html?productid={{zhu[index].productId}}">
-            <h5 class="zzh_details_text">
-                {{zhu[index].productName}}
-            </h5>
-            <p class="zzh_details_price">
-                {{zhu[index].productPrice}}
-            </p>
-            <i>{{zhu[index].productQuote}}</i>
-            <i>{{zhu[index].productCom}}</i>
-        </a>
     </div>
 
-    </div>
-    {{/each}}
-    </script>
-    <!-- 列表渲染成功 -->
-    <div class="zzh_details_box">
-    </div>
-
-    <!-- GG  end-->
-    <footer id="footer">
-        <div class="row">
-            <div class="col-xs-4">
-                <a href="">登录</a>
-            </div>
-            <div class="col-xs-4">
-                <a href="">注册</a>
-            </div>
-            <div class="col-xs-4">
-                <a href="#">返回顶部</a>
-            </div>
-        </div>
-        <p><a href="">手机app下载 </a><a href="">慢慢买手机版 </a> -- 掌上比价平台</p>
-        <p>m.manmanbuy.com </p>
-    </footer>
 </body>
-<script src="./lib/mui/js/mui.js"></script><!-- 框架 -->
+
+<!-- 模板渲染 开始 -->
+
+<!-- 分类菜单 开始 -->
+<script id="getProductlist" type="text/html">
+    <div class="category-title">
+        <ol class="breadcrumb">
+            <li><a href="javascript:;">首页 > </a></li>
+            <li><a href="javascript:;">分类大全 > </a></li>
+            <li>电视机 > </li>
+        </ol>
+        <a class="btn btn-default" href="">筛选</a>
+    </div>
+    {{each arr item index}}
+        <div class="media">
+            <a class="media-left" href="">
+                {{@ item.productImg}}
+            </a>
+            <div class="media-body">
+                <a href="bijia.html?productId=0">
+                    <h5>{{item.productName}}</h5>
+                    <p class="price">{{item.productPrice}}</p>
+                    <em>{{item.productQuote}}</em><em>{{item.productCom}}</em>
+                </a>
+            </div>
+        </div>
+    {{/each}}
+</script>
+<!-- 分类菜单 结束 -->
+
+<!-- 模板渲染 结束 -->
+<script src="./lib/jquery/jquery-1.12.2.js"></script>
+<script src="./lib/bootstrap/js/bootstrap.js"></script>
 <script src="./lib/zepto/zepto.js"></script><!-- 移动端包 -->
 <script src="./lib/arttemplate/template-web.js"></script><!-- 渲染引擎 -->
 <script src="./js/ZZH_List_of_goods.js"></script><!-- 网页js -->

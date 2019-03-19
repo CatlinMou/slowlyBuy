@@ -55,7 +55,7 @@
 <!-- 导航栏 开始 -->
 <script id="navTpl" type="text/html">
     {{each arr item index}}
-        <li class="{{index == 0 ? 'active' : ''}}"><a href="javascript:;" data-titleid="{{index}}">{{item.title}}</a></li>
+        <li class="{{index == 0 ? 'active' : ''}}" value="{{index}}"><a href="javascript:;">{{item.title}}</a></li>
     {{/each}}
 </script>
 <!-- 导航栏 结束 -->
